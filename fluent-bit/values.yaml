@@ -540,8 +540,6 @@ config:
   ##
   inputs: |
     [INPUT]
-        Name cpu
-    [INPUT]
         Name tail
         Tag ghost
         Path /bitnami/content/logs/*.log
@@ -570,9 +568,6 @@ config:
   ## https://docs.fluentbit.io/manual/pipeline/outputs
   ##
   outputs: |
-    [OUTPUT]
-        Name  stdout
-        Match *
     [OUTPUT]
         Name        splunk
         Match       ghost
